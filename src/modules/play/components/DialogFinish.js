@@ -39,21 +39,27 @@ const DialogFinish = (props) => {
             )}
 
             {state.player1.points > state.player2.points && (
-              <p style={{ marginTop: 0 }}>
-                Player 1 WON!!!{' '}
-                <span style={{ fontSize: 'xx-large', color: 'initial' }}>
-                  🎉
-                </span>
-              </p>
+              <>
+                <p style={{ marginTop: 0 }}>
+                  Player 1 WON!!!{' '}
+                  <span style={{ fontSize: 'xx-large', color: 'initial' }}>
+                    🎉
+                  </span>
+                </p>
+                <p>Points: {state.player2.points}</p>
+              </>
             )}
 
             {state.player1.points < state.player2.points && (
-              <p style={{ marginTop: 0 }}>
-                Player 2 WON!!!{' '}
-                <span style={{ fontSize: 'xx-large', color: 'initial' }}>
-                  🎉
-                </span>
-              </p>
+              <>
+                <p style={{ marginTop: 0 }}>
+                  Player 2 WON!!!{' '}
+                  <span style={{ fontSize: 'xx-large', color: 'initial' }}>
+                    🎉
+                  </span>
+                </p>
+                <p>Points: {state.player2.points}</p>
+              </>
             )}
           </DialogContentText>
           <Button
@@ -61,6 +67,7 @@ const DialogFinish = (props) => {
             size="small"
             color="primary"
             onClick={onClose}
+            style={{ margin: 15 }}
             startIcon={<PlayCircleOutlineIcon />}
           >
             Play Again
@@ -74,7 +81,6 @@ const DialogFinish = (props) => {
 DialogFinish.propTypes = {
   onClose: PropTypes.func.isRequired,
   open: PropTypes.bool.isRequired,
-  selectedValue: PropTypes.string.isRequired,
 };
 
 export default DialogFinish;
