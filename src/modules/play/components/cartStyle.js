@@ -1,6 +1,6 @@
 const cartStyle = {
   icon: {
-    fontSize: '4rem',
+    fontSize: '3rem',
   },
   c: {
     position: 'absolute',

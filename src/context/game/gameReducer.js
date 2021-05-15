@@ -1,9 +1,9 @@
 const GameReducer = (state, action) => {
   switch (action.type) {
-    case 'UPDATE_LOGGED':
+    case 'UPDATE_CARDS':
       return {
         ...state,
-        logged: action.payload,
+        cards: action.payload,
       };
     case 'UPDATE_PLAYER_1':
       return {
@@ -14,6 +14,18 @@ const GameReducer = (state, action) => {
       return {
         ...state,
         player2: action.payload,
+      };
+    case 'RESET_GAME':
+      return {
+        ...state,
+        cards: action.payload.cards,
+        player1: action.payload.player1,
+        player2: action.payload.player2,
+      };
+    case 'UPDATE_PLAYING':
+      return {
+        ...state,
+        playing: action.payload,
       };
     default:
       return state;

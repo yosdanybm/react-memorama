@@ -6,13 +6,7 @@ import Play from './modules/play/container/Play';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#CACED8',
-    },
-    secondary: {
-      main: '#43B02A',
-    },
-    info: {
-      main: '#838aa2',
+      main: '#187DE4',
     },
   },
 });

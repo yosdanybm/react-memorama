@@ -1,4 +1,4 @@
-const playStyle = (theme) => ({
+const playStyle = () => ({
   root: {
     flexGrow: 1,
     top: '0',
@@ -7,7 +7,7 @@ const playStyle = (theme) => ({
   },
   container: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    marginTop: 125,
     display: 'flex',
     justifyContent: 'center',
   },
