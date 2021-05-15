@@ -1,8 +1,6 @@
-# Getting Started with Create React App
+# Start project via Docker or CRA
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-# Start project via Docker or CRA
 
 ## 1 - Docker
 
