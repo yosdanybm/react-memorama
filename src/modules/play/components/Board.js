@@ -1,27 +1,31 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Paper } from "@material-ui/core";
-import styles from "assets/jss/boardStyle.js";
+import React, { useContext } from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import { Grid } from '@material-ui/core';
+import styles from './boardStyle.js';
+import GameContext from 'context/game/gameContext';
+import Cart from './Cart';
 
 const useStyles = makeStyles(styles);
 
 function Board() {
   const classes = useStyles();
-
-  const carts = [...new Array(20)];
+  const [state] = useContext(GameContext);
 
   return (
-    <div className={classes.board}>
-      <Grid container spacing={3}>
-        {carts.map((cart) => {
-          return (
-            <Grid key={cart} item xs={3}>
-              <Paper className={classes.paper}>xs=3</Paper>
-            </Grid>
-          );
-        })}
-      </Grid>
-    </div>
+    <Grid
+      className={classes.board}
+      container
+      justify="center"
+      alignItems="center"
+    >
+      {state.carts.map((el, index) => {
+        return (
+          <Grid key={index} item xs={3}>
+            <Cart currentCart={el} />
+          </Grid>
+        );
+      })}
+    </Grid>
   );
 }
 

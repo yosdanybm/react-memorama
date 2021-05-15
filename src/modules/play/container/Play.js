@@ -1,8 +1,8 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Header from "../components/Header";
-import styles from "assets/jss/playStyle.js";
-import Board from "../components/Board";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Header from '../components/Header';
+import styles from './playStyle.js';
+import Board from '../components/Board';
 
 const useStyles = makeStyles(styles);
 
