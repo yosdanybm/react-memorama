@@ -2,7 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Docker
+# Start project via Docker or CRA
+
+## 1 - Docker
 
 ## Prerequisites
 
@@ -19,7 +21,7 @@ docker run -p 8080:3000 react-memorama
 
 Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
-## CRA - Available Scripts
+## 2 - CRA Available Scripts
 
 In the project directory, you can run:
 
