@@ -2,7 +2,24 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Docker
+
+## Prerequisites
+
+Make sure you have already installed Docker Engine. You don’t need to install Nginx or NPM, as both are provided by Docker images.
+
+In the project directory, you can run:
+
+```bash
+git clone https://github.com/yosdanybm/react-memorama.git
+cd docker-reactjs
+docker build -t react-memorama .
+docker run -p 8080:3000 react-memorama
+```
+
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+
+## CRA - Available Scripts
 
 In the project directory, you can run:
 
